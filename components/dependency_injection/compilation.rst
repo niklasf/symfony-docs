@@ -34,7 +34,7 @@ something needed in everyday use.
 The compiler pass must have the ``process`` method which is passed the container
 being compiled::
 
-    class CustomCompilerPass
+    class CustomCompilerPass implements CompilerPassInterface
     {
         public function process(ContainerBuilder $container)
         {
